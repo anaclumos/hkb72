@@ -1,0 +1,342 @@
+:root {
+  --hkb-black: rgba(10, 10, 10, 1);
+  --hkb-white: rgba(255, 255, 255, 1);
+
+  --hkb-lightgray: rgba(245, 245, 245, 1);
+  --hkb-gray: rgba(170, 170, 170, 1);
+
+  --hkb-lightmint: rgba(37, 163, 165, 0.2);
+  --hkb-mint: rgba(37, 163, 165, 1);
+
+  --hkb-lightred: rgba(255, 88, 88, 0.2);
+  --hkb-red: rgba(255, 88, 88, 1);
+
+  --hkb-lightyellow: rgba(255, 196, 13, 0.2);
+  --hkb-yellow: rgba(169, 134, 0, 1);
+
+  --hkb-lightorange: rgba(229, 115, 47, 0.2);
+  --hkb-orange: rgba(229, 115, 47, 1);
+
+  --hkb-lightgreen: rgba(50, 205, 50, 0.2);
+  --hkb-green: rgba(34, 139, 34, 1);
+
+  --hkb-font-big: 24px;
+  --hkb-font-medium: 20px;
+  --hkb-font-small: 15px;
+}
+
+* {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  /* background-color: rgba(255, 0, 0, 0.1); */
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.header {
+  height: 79px;
+  width: 100%;
+  border-bottom: 1px solid var(--hkb-lightgray);
+  display: flex;
+  position: relative;
+}
+
+.left {
+  width: calc(20vw - 1px);
+  border-right: 1px solid red;
+}
+
+.middle {
+  width: calc(60vw - 2px);
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+}
+
+.right {
+  width: calc(20vw - 1px);
+  border-left: 1px solid red;
+}
+
+.hkb-icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.title-label {
+  font-size: var(--hkb-font-big);
+  margin: auto auto auto 20px;
+}
+
+.title {
+  margin: auto;
+  display: flex;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-field {
+  margin: 20px;
+  min-height: 20px;
+  width: calc(100% - 60px);
+  background-color: var(--hkb-lightgray);
+  font-size: var(--hkb-font-small);
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+.search-field::placeholder {
+  color: var(--hkb-gray);
+}
+
+.profile {
+  margin: 20px;
+  min-height: 20px;
+  width: calc(100% - 60px);
+  background-color: var(--hkb-white);
+  font-size: var(--hkb-font-small);
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.profile:hover {
+  background-color: var(--hkb-lightmint);
+  color: var(--hkb-mint);
+}
+
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.profile-name {
+  margin: auto auto auto 40px;
+}
+
+.contents {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+.navigator {
+  border-right: 2px solid var(--hkb-lightgray);
+}
+
+.section-selector-list {
+  padding: 0;
+}
+
+.section-selector {
+  min-height: 60px;
+  position: relative;
+}
+
+.section-selector-input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.section-selector-label {
+  display: block;
+  width: calc(100% - 40px);
+  min-height: 60px;
+  padding: 0 20px 0 0;
+  border-radius: 0 10px 10px 0;
+  color: var(--hkb-gray);
+  font-size: var(--hkb-font-medium);
+}
+
+.section-selector-label:hover {
+  background-color: var(--hkb-lightmint);
+  color: var(--hkb-mint);
+}
+
+.section-selector-input:checked + .section-selector-label {
+  background: var(--hkb-lightmint);
+  color: var(--hkb-mint);
+  transition: all 0.2s ease-in-out;
+}
+
+.section-selector-label-text {
+  margin: auto auto auto 80px;
+}
+
+.activity-section {
+  width: calc(60wh - 2px);
+  display: flex;
+}
+
+.activity {
+  position: relative;
+  width: 100%;
+}
+
+.activity-top-bar {
+  display: flex;
+  position: relative;
+  height: 40px;
+  padding: 0 20px;
+  margin: 20px 0px 0px 0px;
+}
+
+.hkb-label {
+  cursor: pointer;
+  display: block;
+  width: 115px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  font-size: var(--hkb-font-small);
+  position: relative;
+}
+
+.activity-top-bar-title {
+  font-size: var(--hkb-font-big);
+}
+
+.income-expense-checkbox {
+  display: flex;
+  margin-left: 150px;
+}
+
+.hkb-orange {
+  background-color: var(--hkb-lightorange);
+  color: var(--hkb-orange);
+}
+
+.hkb-transparent {
+  background-color: transparent;
+  color: var(--hkb-black);
+}
+
+.hkb-gray {
+  background-color: var(--hkb-lightgray);
+  color: var(--hkb-gray);
+}
+
+.hkb-green {
+  background-color: var(--hkb-lightgreen);
+  color: var(--hkb-green);
+}
+
+.prev-next-month-buttons {
+  display: flex;
+  right: 20px;
+}
+
+.hkb-label-centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.hkb-checkbox-input:checked + .hkb-label {
+  background: var(--hkb-lightmint);
+  color: var(--hkb-mint);
+  transition: all 0.2s ease-in-out;
+}
+
+.hkb-label {
+  transition: all 0.2s ease-in-out;
+}
+
+.hkb-label:hover {
+  background-color: var(--hkb-lightmint);
+  color: var(--hkb-mint);
+  transition: all 0.2s ease-in-out;
+}
+
+.hkb-checkbox-input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.activity-day-grid-container {
+  margin: 19px 19px 0 19px;
+  padding: 10px 0px 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr 2fr 2fr;
+  grid-auto-rows: 40px;
+  border: 2px solid var(--hkb-lightgray);
+  border-radius: 10px;
+}
+
+.activity-day-grid-item {
+  font-size: var(--hkb-font-small);
+}
+
+.centered {
+  margin: auto;
+}
+
+.left-aligned {
+  margin: auto auto auto 20px;
+}
+
+.right-aligned {
+  margin: auto 20px auto auto;
+}
+
+.activity-type-label {
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  width: 80px;
+  height: 30px;
+}
+
+.overflow-allowed {
+  overflow: visible;
+}
+
+.activity-day {
+  font-size: var(--hkb-font-medium);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.activity-day-calc {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.hkb-orange-text {
+  color: var(--hkb-orange);
+}
+
+.hkb-green-text {
+  color: var(--hkb-green);
+}
+
+.activity-day-scroll-view {
+  height: calc(100% - 80px);
+  overflow: scroll;
+}
+
+.gradientback {
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  background: linear-gradient(to bottom, white 50%, transparent);
+  z-index: 1;
+}

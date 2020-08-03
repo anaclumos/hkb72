@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HKB 7</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left">
+        <div class="title vertical-center">
+          <img class="hkb-icon" src="./img/005-coin.png" alt="" srcset="" />
+          <div class="title-label">가계부</div>
+        </div>
+      </div>
+      <div class="middle">
+        <input class="search-field" type="text" placeholder="검색하기" />
+      </div>
+      <div class="right">
+        <button class="profile">
+          <img class="profile-pic" src="./profile.jpg" alt="" srcset="" />
+          <div class="profile-name vertical-center">Sunghyun Cho — Google</div>
+        </button>
+      </div>
+    </div>
+    <div class="contents">
+      <div class="navigator left">
+        <ul class="section-selector-list">
+          <li class="section-selector">
+            <input
+              class="section-selector-input"
+              type="radio"
+              value="활동 내역"
+              id="activity-section-selector"
+              name="section-selector"
+              checked
+            />
+            <label class="section-selector-label" for="activity-section-selector">
+              <img class="hkb-icon vertical-center" src="./img/003-exchange.png" alt="" />
+              <div class="section-selector-label-text vertical-center">
+                활동 내역
+              </div></label
+            >
+          </li>
+
+          <li class="section-selector">
+            <input
+              class="section-selector-input"
+              type="radio"
+              value="달력"
+              id="calendar-section-selector"
+              name="section-selector"
+            />
+            <label class="section-selector-label" for="calendar-section-selector">
+              <img class="hkb-icon vertical-center" src="./img/021-time.png" alt="" />
+              <div class="section-selector-label-text vertical-center">달력</div>
+            </label>
+          </li>
+
+          <li class="section-selector">
+            <input
+              class="section-selector-input"
+              type="radio"
+              value="통계"
+              id="statistics-section-selector"
+              name="section-selector"
+            />
+            <label class="section-selector-label" for="statistics-section-selector">
+              <img class="hkb-icon vertical-center" src="./img/024-graphic.png" alt="" />
+              <div class="section-selector-label-text vertical-center">통계</div>
+            </label>
+          </li>
+
+          <li class="section-selector">
+            <input
+              class="section-selector-input"
+              type="radio"
+              value="결제 수단 관리"
+              id="payment-methods-section-selector"
+              name="section-selector"
+            />
+            <label class="section-selector-label" for="payment-methods-section-selector">
+              <img class="hkb-icon vertical-center" src="./img/044-credit card.png" alt="" />
+              <div class="section-selector-label-text vertical-center">결제 수단 관리</div></label
+            >
+          </li>
+
+          <li class="section-selector">
+            <input
+              class="section-selector-input"
+              type="radio"
+              value="달력"
+              id="settings-section-selector"
+              name="section-selector"
+            />
+            <label class="section-selector-label" for="settings-section-selector">
+              <img class="hkb-icon vertical-center" src="./img/019-banker.png" alt="" />
+              <div class="section-selector-label-text vertical-center">사용자 설정</div>
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="activity-section">
+        <div class="activity-section middle">
+          <div class="activity">
+            <div class="activity-top-bar">
+              <div class="activity-top-bar-title vertical-center">2020년 8월</div>
+              <div class="activity-top-bar-buttons income-expense-checkbox vertical-center">
+                <input
+                  class="hkb-checkbox-input vertical-center"
+                  type="checkbox"
+                  name="show-income-expense-checkbox"
+                  id="show-income-checkbox"
+                />
+                <label class="hkb-label hkb-gray" for="show-income-checkbox">
+                  <div class="hkb-label-centered-text">수입</div>
+                </label>
+
+                <input
+                  class="hkb-checkbox-input"
+                  type="checkbox"
+                  name="show-income-expense-checkbox"
+                  id="show-expense-checkbox"
+                />
+                <label class="hkb-label hkb-gray" for="show-expense-checkbox">
+                  <div class="hkb-label-centered-text">지출</div>
+                </label>
+              </div>
+              <div class="activity-top-bar-buttons prev-next-month-buttons vertical-center">
+                <button class="hkb-label hkb-transparent">← 이전 달</button>
+                <button class="hkb-label hkb-transparent">다음 달 →</button>
+              </div>
+            </div>
+
+            <div class="gradientback"></div>
+
+            <div class="activity-day-scroll-view">
+              <div class="activity-day-grid-container">
+                <div class="activity-day activity-day-grid-item left-aligned">8월 3일 월요일</div>
+                <div class="activity-day-calc activity-day-grid-item right-aligned">
+                  <span class="hkb-green-text">+1,380,000원 <span class = "hkb-orange-text">-26,000원</span> = <span class="hkb-green-text">+1,354,000원</span>
+                </div>
+                <div class="activity-day-grid-item left-aligned">7:12 PM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">쇼핑비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">키보드 구매</div>
+                <div class="activity-day-grid-item left-aligned">현대카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-20,000원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:48 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">식비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">버거킹 점심식사</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 체크카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-6,300원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:34 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-green">
+                    <div class="hkb-label-centered-text">월급</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">우아한테크캠프 월급</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 통장</div>
+                <div class="activity-day-grid-item right-aligned hkb-green-text">+1,380,000원</div>
+              </div>
+  
+              <div class="activity-day-grid-container">
+                <div class="activity-day activity-day-grid-item left-aligned">8월 3일 월요일</div>
+                <div class="activity-day-calc activity-day-grid-item right-aligned">
+                  <span class="hkb-green-text">+1,380,000원 <span class = "hkb-orange-text">-26,000원</span> = <span class="hkb-green-text">+1,354,000원</span>
+                </div>
+                <div class="activity-day-grid-item left-aligned">7:12 PM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">쇼핑비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">키보드 구매</div>
+                <div class="activity-day-grid-item left-aligned">현대카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-20,000원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:48 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">식비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">버거킹 점심식사</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 체크카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-6,300원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:34 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-green">
+                    <div class="hkb-label-centered-text">월급</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">우아한테크캠프 월급</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 통장</div>
+                <div class="activity-day-grid-item right-aligned hkb-green-text">+1,380,000원</div>
+              </div>
+  
+              <div class="activity-day-grid-container">
+                <div class="activity-day activity-day-grid-item left-aligned">8월 3일 월요일</div>
+                <div class="activity-day-calc activity-day-grid-item right-aligned">
+                  <span class="hkb-green-text">+1,380,000원 <span class = "hkb-orange-text">-26,000원</span> = <span class="hkb-green-text">+1,354,000원</span>
+                </div>
+                <div class="activity-day-grid-item left-aligned">7:12 PM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">쇼핑비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">키보드 구매</div>
+                <div class="activity-day-grid-item left-aligned">현대카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-20,000원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:48 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">식비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">버거킹 점심식사</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 체크카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-6,300원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:34 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-green">
+                    <div class="hkb-label-centered-text">월급</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">우아한테크캠프 월급</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 통장</div>
+                <div class="activity-day-grid-item right-aligned hkb-green-text">+1,380,000원</div>
+              </div>
+  
+              <div class="activity-day-grid-container">
+                <div class="activity-day activity-day-grid-item left-aligned">8월 3일 월요일</div>
+                <div class="activity-day-calc activity-day-grid-item right-aligned">
+                  <span class="hkb-green-text">+1,380,000원 <span class = "hkb-orange-text">-26,000원</span> = <span class="hkb-green-text">+1,354,000원</span>
+                </div>
+                <div class="activity-day-grid-item left-aligned">7:12 PM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">쇼핑비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">키보드 구매</div>
+                <div class="activity-day-grid-item left-aligned">현대카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-20,000원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:48 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">식비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">버거킹 점심식사</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 체크카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-6,300원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:34 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-green">
+                    <div class="hkb-label-centered-text">월급</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">우아한테크캠프 월급</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 통장</div>
+                <div class="activity-day-grid-item right-aligned hkb-green-text">+1,380,000원</div>
+              </div>
+  
+              <div class="activity-day-grid-container">
+                <div class="activity-day activity-day-grid-item left-aligned">8월 3일 월요일</div>
+                <div class="activity-day-calc activity-day-grid-item right-aligned">
+                  <span class="hkb-green-text">+1,380,000원 <span class = "hkb-orange-text">-26,000원</span> = <span class="hkb-green-text">+1,354,000원</span>
+                </div>
+                <div class="activity-day-grid-item left-aligned">7:12 PM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">쇼핑비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">키보드 구매</div>
+                <div class="activity-day-grid-item left-aligned">현대카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-20,000원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:48 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">식비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">버거킹 점심식사</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 체크카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-6,300원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:34 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-green">
+                    <div class="hkb-label-centered-text">월급</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">우아한테크캠프 월급</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 통장</div>
+                <div class="activity-day-grid-item right-aligned hkb-green-text">+1,380,000원</div>
+              </div>
+  
+              <div class="activity-day-grid-container">
+                <div class="activity-day activity-day-grid-item left-aligned">8월 3일 월요일</div>
+                <div class="activity-day-calc activity-day-grid-item right-aligned">
+                  <span class="hkb-green-text">+1,380,000원 <span class = "hkb-orange-text">-26,000원</span> = <span class="hkb-green-text">+1,354,000원</span>
+                </div>
+                <div class="activity-day-grid-item left-aligned">7:12 PM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">쇼핑비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">키보드 구매</div>
+                <div class="activity-day-grid-item left-aligned">현대카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-20,000원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:48 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">식비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">버거킹 점심식사</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 체크카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-6,300원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:34 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-green">
+                    <div class="hkb-label-centered-text">월급</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">우아한테크캠프 월급</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 통장</div>
+                <div class="activity-day-grid-item right-aligned hkb-green-text">+1,380,000원</div>
+              </div>
+              <div class="activity-day-grid-container">
+                <div class="activity-day activity-day-grid-item left-aligned">8월 3일 월요일</div>
+                <div class="activity-day-calc activity-day-grid-item right-aligned">
+                  <span class="hkb-green-text">+1,380,000원 <span class = "hkb-orange-text">-26,000원</span> = <span class="hkb-green-text">+1,354,000원</span>
+                </div>
+                <div class="activity-day-grid-item left-aligned">7:12 PM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">쇼핑비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">키보드 구매</div>
+                <div class="activity-day-grid-item left-aligned">현대카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-20,000원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:48 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">식비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">버거킹 점심식사</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 체크카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-6,300원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:34 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-green">
+                    <div class="hkb-label-centered-text">월급</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">우아한테크캠프 월급</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 통장</div>
+                <div class="activity-day-grid-item right-aligned hkb-green-text">+1,380,000원</div>
+              </div>
+  
+              <div class="activity-day-grid-container">
+                <div class="activity-day activity-day-grid-item left-aligned">8월 3일 월요일</div>
+                <div class="activity-day-calc activity-day-grid-item right-aligned">
+                  <span class="hkb-green-text">+1,380,000원 <span class = "hkb-orange-text">-26,000원</span> = <span class="hkb-green-text">+1,354,000원</span>
+                </div>
+                <div class="activity-day-grid-item left-aligned">7:12 PM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">쇼핑비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">키보드 구매</div>
+                <div class="activity-day-grid-item left-aligned">현대카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-20,000원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:48 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">식비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">버거킹 점심식사</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 체크카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-6,300원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:34 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-green">
+                    <div class="hkb-label-centered-text">월급</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">우아한테크캠프 월급</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 통장</div>
+                <div class="activity-day-grid-item right-aligned hkb-green-text">+1,380,000원</div>
+              </div>
+              <div class="activity-day-grid-container">
+                <div class="activity-day activity-day-grid-item left-aligned">8월 3일 월요일</div>
+                <div class="activity-day-calc activity-day-grid-item right-aligned">
+                  <span class="hkb-green-text">+1,380,000원 <span class = "hkb-orange-text">-26,000원</span> = <span class="hkb-green-text">+1,354,000원</span>
+                </div>
+                <div class="activity-day-grid-item left-aligned">7:12 PM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">쇼핑비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">키보드 구매</div>
+                <div class="activity-day-grid-item left-aligned">현대카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-20,000원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:48 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">식비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">버거킹 점심식사</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 체크카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-6,300원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:34 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-green">
+                    <div class="hkb-label-centered-text">월급</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">우아한테크캠프 월급</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 통장</div>
+                <div class="activity-day-grid-item right-aligned hkb-green-text">+1,380,000원</div>
+              </div>
+              <div class="activity-day-grid-container">
+                <div class="activity-day activity-day-grid-item left-aligned">8월 3일 월요일</div>
+                <div class="activity-day-calc activity-day-grid-item right-aligned">
+                  <span class="hkb-green-text">+1,380,000원 <span class = "hkb-orange-text">-26,000원</span> = <span class="hkb-green-text">+1,354,000원</span>
+                </div>
+                <div class="activity-day-grid-item left-aligned">7:12 PM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">쇼핑비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">키보드 구매</div>
+                <div class="activity-day-grid-item left-aligned">현대카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-20,000원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:48 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">식비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">버거킹 점심식사</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 체크카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-6,300원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:34 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-green">
+                    <div class="hkb-label-centered-text">월급</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">우아한테크캠프 월급</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 통장</div>
+                <div class="activity-day-grid-item right-aligned hkb-green-text">+1,380,000원</div>
+              </div>
+              <div class="activity-day-grid-container">
+                <div class="activity-day activity-day-grid-item left-aligned">8월 3일 월요일</div>
+                <div class="activity-day-calc activity-day-grid-item right-aligned">
+                  <span class="hkb-green-text">+1,380,000원 <span class = "hkb-orange-text">-26,000원</span> = <span class="hkb-green-text">+1,354,000원</span>
+                </div>
+                <div class="activity-day-grid-item left-aligned">7:12 PM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">쇼핑비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">키보드 구매</div>
+                <div class="activity-day-grid-item left-aligned">현대카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-20,000원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:48 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">식비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">버거킹 점심식사</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 체크카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-6,300원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:34 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-green">
+                    <div class="hkb-label-centered-text">월급</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">우아한테크캠프 월급</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 통장</div>
+                <div class="activity-day-grid-item right-aligned hkb-green-text">+1,380,000원</div>
+              </div>
+              <div class="activity-day-grid-container">
+                <div class="activity-day activity-day-grid-item left-aligned">8월 3일 월요일</div>
+                <div class="activity-day-calc activity-day-grid-item right-aligned">
+                  <span class="hkb-green-text">+1,380,000원 <span class = "hkb-orange-text">-26,000원</span> = <span class="hkb-green-text">+1,354,000원</span>
+                </div>
+                <div class="activity-day-grid-item left-aligned">7:12 PM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">쇼핑비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">키보드 구매</div>
+                <div class="activity-day-grid-item left-aligned">현대카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-20,000원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:48 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">식비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">버거킹 점심식사</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 체크카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-6,300원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:34 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-green">
+                    <div class="hkb-label-centered-text">월급</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">우아한테크캠프 월급</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 통장</div>
+                <div class="activity-day-grid-item right-aligned hkb-green-text">+1,380,000원</div>
+              </div>
+              <div class="activity-day-grid-container">
+                <div class="activity-day activity-day-grid-item left-aligned">8월 3일 월요일</div>
+                <div class="activity-day-calc activity-day-grid-item right-aligned">
+                  <span class="hkb-green-text">+1,380,000원 <span class = "hkb-orange-text">-26,000원</span> = <span class="hkb-green-text">+1,354,000원</span>
+                </div>
+                <div class="activity-day-grid-item left-aligned">7:12 PM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">쇼핑비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">키보드 구매</div>
+                <div class="activity-day-grid-item left-aligned">현대카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-20,000원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:48 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-orange">
+                    <div class="hkb-label-centered-text">식비</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">버거킹 점심식사</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 체크카드</div>
+                <div class="activity-day-grid-item right-aligned hkb-orange-text">-6,300원</div>
+  
+                <div class="activity-day-grid-item left-aligned">11:34 AM</div>
+                <div class="activity-day-grid-item centered">
+                  <label class="activity-type-label hkb-green">
+                    <div class="hkb-label-centered-text">월급</div>
+                  </label>
+                </div>
+                <div class="activity-day-grid-item left-aligned">우아한테크캠프 월급</div>
+                <div class="activity-day-grid-item left-aligned">카카오뱅크 통장</div>
+                <div class="activity-day-grid-item right-aligned hkb-green-text">+1,380,000원</div>
+              </div>
+              </div>
+
+          </div>
+        </div>
+        <div class="add-new-activity-form right">안녕</div>
+      </div>
+    </div>
+  </body>
+</html>
